@@ -35,3 +35,17 @@ Uses **AES** for fast bulk data encryption and **ECIES/RSA** for secure key exch
    ```bash
    git clone [https://github.com/Dharam-GitHub/Dharam-GitHub-Secure-Cloud-Data-Using-PRE-and-Watermarking.git](https://github.com/Dharam-GitHub/Dharam-GitHub-Secure-Cloud-Data-Using-PRE-and-Watermarking.git)
    cd Dharam-GitHub-Secure-Cloud-Data-Using-PRE-and-Watermarking
+
+2. **Install Dependencies:**
+
+pip install -r requirements.txt
+
+3. **Database Configuration:**
+
+-Ensure your MySQL server is running.
+
+-Update the database credentials in app.py.
+
+4. **Run the Application:**
+
+python app.py
