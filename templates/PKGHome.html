@@ -1,0 +1,203 @@
+
+<html lang="zxx">
+
+<head>
+    <title>Intense Corporate Category Flat Bootstrap Responsive website Template | Contact :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Intense Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="../static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="home">
+        <div class="container">
+            <div class="header d-lg-flex justify-content-between align-items-center py-sm-3 py-2 px-sm-2 px-1">
+                <!-- logo -->
+                <div id="logo">
+                    <h1><a href="#">U Can Access</a></h1>
+                </div>
+                <!-- //logo -->
+                <!-- nav -->
+                <div class="nav_w3ls ml-lg-5">
+                    <nav>
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu">
+                         <li ><a href="/PKGHome">Home</a></li>
+								<li ><a href="/">Logout</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <!-- //nav -->
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <!-- inner banner -->
+    <div class="inner-banner-w3ls d-flex flex-column justify-content-center align-items-center">
+    </div>
+    <!-- //inner banner -->
+    <!-- breadcrumbs -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+                <a href="/" class="m-0">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">PKG</li>
+        </ol>
+    </nav>
+    <!-- //breadcrumbs -->
+    <!-- contact -->
+
+    {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <script>
+      var messages = {{ messages | safe }};
+      for (var i=0; i<messages.length; i++) {
+        alert(messages[i]);
+      }
+    </script>
+  {% endif %}
+{% endwith %}
+
+    <section class="contact-wthree align-w3" id="contact">
+        <div class="container" align="center">
+            <div class="wthree_pvt_title text-center" >
+                <h4 class="w3pvt-title">Approved Waiting Owner Information
+                </h4>
+
+                <div class="contact-form-wthreelayouts" align="left">
+
+
+
+
+                        <table width="100%" border="1" align="center" >
+              <tr bgcolor="#40bad5" >
+
+                <td height="31" ><div align="center" class="contact_form_subject style1"  >Name</div></td>
+
+                <td ><div align="center" class="contact_form_subject style1" >Mobile</div></td>
+                <td ><div align="center" class="contact_form_subject style1" >Email</div></td>
+                <td ><div align="center" class="contact_form_subject style1" >Address</div></td>
+
+                <td ><div align="center" class="contact_form_subject style1" >UserName</div></td>
+                  <td ><div align="center" class="contact_form_subject style1" >Status</div></td>
+                   <td ><div align="center" class="contact_form_subject style1" >Action</div></td>
+
+              </tr>
+			  {% for item in data %}
+              <tr>
+
+                <td height="40"><div align="center" class="contact_form_name style2">{{item[1]}}</div></td>
+                <td><div align="center" class="contact_form_name style2">{{item[2]}}</div></td>
+                <td><div align="center" class="ccontact_form_name style2">{{item[3]}}</div></td>
+                <td><div align="center" class="contact_form_name style2">{{item[4]}}</div></td>
+                <td><div align="center" class="contact_form_name style2">{{item[5]}}</div></td>
+
+                <td><div align="center" class="contact_form_subject style2">{{item[7]}}</div></td>
+                   <td><div align="center" class="contact_form_subject style2" ><a href="Approved?lid={{item[0]}}&email={{item[3]}}">Approved</a>//<a href="Reject?lid={{item[0]}}&email={{item[3]}}">Reject</a></div></td>
+              </tr>
+			  {% endfor %}
+
+            </table>
+
+                              <div>
+
+                              </div>
+                               <div>
+
+                              </div>
+
+                </div>
+
+<h4 class="w3pvt-title">Approved/Reject Owner Information
+                </h4>
+<div class="contact-form-wthreelayouts" align="left">
+
+
+                                 <table width="100%" border="1" align="center"  style="padding:20px" >
+              <tr bgcolor="#40bad5">
+
+                <td height="31" ><div align="center" class="contact_form_subject style1" >Name</div></td>
+
+                <td ><div align="center" class="contact_form_subject style1" >Mobile</div></td>
+                <td ><div align="center" class="contact_form_subject style1" >Email</div></td>
+                <td ><div align="center" class="contact_form_subject style1" >Address</div></td>
+
+                <td ><div align="center" class="contact_form_subject style1" >UserName</div></td>
+                  <td ><div align="center" class="contact_form_subject style1" >Status</div></td>
+
+              </tr>
+			  {% for item1 in data1 %}
+              <tr>
+
+                <td height="40"><div align="center" class="contact_form_name style2">{{item1[1]}}</div></td>
+                <td><div align="center" class="contact_form_name style2">{{item1[2]}}</div></td>
+                <td><div align="center" class="contact_form_name style2">{{item1[3]}}</div></td>
+                <td><div align="center" class="contact_form_name style2">{{item1[4]}}</div></td>
+                <td><div align="center" class="contact_form_name style2">{{item1[5]}}</div></td>
+
+                <td><div align="center" class="contact_form_name style2">{{item1[7]}}</div></td>
+
+
+              </tr>
+			  {% endfor %}
+
+            </table>
+
+
+
+
+
+
+
+
+                    </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- //contact -->
+    <!-- footer -->
+
+    <!-- //footer -->
+    <!-- copyright -->
+    <div class="cpy-right text-center">
+        <p class="text-wh">All rights reserved | Design by
+            <a href="#"> Cloud.</a>
+        </p>
+    </div>
+    <!-- //copyright -->
+    <!-- move top icon -->
+    <a href="#home" class="move-top text-center">
+        <span class="fa fa-level-up" aria-hidden="true"></span>
+    </a>
+    <!-- //move top icon -->
+
+</body>
+
+</html>
